@@ -6,7 +6,7 @@
 /*   By: victorcvaz <victorcvaz@student.42.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/20 13:44:28 by victorcvaz        #+#    #+#             */
-/*   Updated: 2023/09/22 03:28:11 by victorcvaz       ###   ########.fr       */
+/*   Updated: 2023/09/22 14:53:03 by victorcvaz       ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -56,7 +56,7 @@ static int	handle_type(char type, va_list args)
 		return ((int)ft_putnbr_base_fd(va_arg(args, unsigned int),
 				HEX_UPPER_BASE, STDOUT_FILENO));
 	else if (type == '%')
-		return ((int)ft_putchar('%'));
+		return ((int)ft_putchar_fd('%', STDOUT_FILENO));
 	else
 		return (0);
 }
