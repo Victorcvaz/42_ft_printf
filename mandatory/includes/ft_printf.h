@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_printf.h                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: victorcvaz <victorcvaz@student.42.fr>      +#+  +:+       +#+        */
+/*   By: vcesar-v <vcesar-v@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/20 13:47:05 by victorcvaz        #+#    #+#             */
-/*   Updated: 2023/09/22 03:45:29 by victorcvaz       ###   ########.fr       */
+/*   Updated: 2023/09/28 17:44:12 by vcesar-v         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,6 +23,5 @@
 
 int	ft_printf(const char *str, ...);
 int	ft_putptr(unsigned long nbr, char *base);
-
 
 #endif

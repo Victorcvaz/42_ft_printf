@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_printf.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: victorcvaz <victorcvaz@student.42.fr>      +#+  +:+       +#+        */
+/*   By: vcesar-v <vcesar-v@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/20 13:44:28 by victorcvaz        #+#    #+#             */
-/*   Updated: 2023/09/22 14:53:03 by victorcvaz       ###   ########.fr       */
+/*   Updated: 2023/09/28 17:50:27 by vcesar-v         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,7 +44,7 @@ static int	handle_type(char type, va_list args)
 	else if (type == 'p')
 		return (ft_putptr(va_arg(args, unsigned long), HEX_LOWER_BASE));
 	else if (type == 'd' || type == 'i')
-		return ((int)ft_putnbr_base_fd(va_arg(args, int), 
+		return ((int)ft_putnbr_base_fd(va_arg(args, int),
 				DECIMAL_BASE, STDOUT_FILENO));
 	else if (type == 'u')
 		return ((int)ft_putnbr_base_fd(va_arg(args, unsigned int),
