@@ -8,7 +8,7 @@ MANDATORY_HEADER_PATH := $(MANDATORY_DIR)includes/
 MANDATORY_SOURCE_PATH := $(MANDATORY_DIR)src/
 
 MANDATORY := $(addprefix $(MANDATORY_SOURCE_PATH), ft_printf.c ft_putptr.c ft_check_base_errors.c \
-	ft_putchar_fd.c ft_putstr_fd.c ft_putnbr_base_u_fd.c ft_strlen.c ft_putnbr_base_fd.c)
+	ft_putchar_fd.c ft_putstr_fd.c ft_strlen.c ft_putnbr_base_fd.c)
 
 MANDATORY_OBJS := $(MANDATORY:.c=.o)
 

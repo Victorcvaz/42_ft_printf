@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_printf.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: vcesar-v <vcesar-v@student.42.fr>          +#+  +:+       +#+        */
+/*   By: victorcvaz <victorcvaz@student.42.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/20 13:44:28 by victorcvaz        #+#    #+#             */
-/*   Updated: 2023/09/30 17:21:13 by vcesar-v         ###   ########.fr       */
+/*   Updated: 2023/10/01 20:02:19 by victorcvaz       ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,13 +47,13 @@ static int	handle_type(char type, va_list args)
 		return ((int)ft_putnbr_base_fd(va_arg(args, int), DECIMAL_BASE,
 				STDOUT_FILENO));
 	if (type == 'u')
-		return ((int)ft_putnbr_base_u_fd(va_arg(args, unsigned int),
+		return ((int)ft_putnbr_base_fd(va_arg(args, unsigned int),
 				DECIMAL_BASE, STDOUT_FILENO));
 	if (type == 'x')
-		return ((int)ft_putnbr_base_u_fd(va_arg(args, unsigned int),
+		return ((int)ft_putnbr_base_fd(va_arg(args, unsigned int),
 				HEX_LOWER_BASE, STDOUT_FILENO));
 	if (type == 'X')
-		return ((int)ft_putnbr_base_u_fd(va_arg(args, unsigned int),
+		return ((int)ft_putnbr_base_fd(va_arg(args, unsigned int),
 				HEX_UPPER_BASE, STDOUT_FILENO));
 	if (type == '%')
 		return ((int)ft_putchar_fd('%', STDOUT_FILENO));
