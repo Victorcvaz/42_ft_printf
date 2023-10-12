@@ -6,7 +6,7 @@
 /*   By: victorcvaz <victorcvaz@student.42.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/20 13:44:28 by victorcvaz        #+#    #+#             */
-/*   Updated: 2023/10/01 20:02:19 by victorcvaz       ###   ########.fr       */
+/*   Updated: 2023/10/09 15:18:29 by victorcvaz       ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,6 +20,8 @@ int	ft_printf(const char *format, ...)
 	int		total_bytes;
 
 	total_bytes = 0;
+	if (!format)
+		return (-1);
 	va_start(args, format);
 	while (*format)
 	{
